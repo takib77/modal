@@ -7,55 +7,45 @@ body {
     margin: 0 auto;
 }
 
+
 header, footer {
     background-color: rgb(200, 200, 200);
     border: solid .5rem rgb(20, 20, 220);
     border-radius: 1rem;
     margin: 1rem auto;
     padding: 1rem;
-    max-width: 1150px;
+    width: 1150px;
 }
 
 header h1 {
     text-align: center;
-    width: 1150px;
 }
 
 nav, footer{
     display: flex;
     margin: 0 auto;
-    max-width: 1150px;
 }
 
-nav ul, footer ul {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1150px;
-    position: relative;
-    left: -20px;
-}
-
-nav ul li {
+.nav, .footer {
     background-color: rgb(180, 180, 180);
     border: solid .2rem rgb(20, 20, 220);
     border-radius: 50%;
+    cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
+    display: flex;
     line-height: 1.2rem;
-    list-style: none;
-    margin: 0 1rem;
+    margin: 2rem;
+    max-width: 1150px;
     padding: 1rem 2rem;
     text-align: center;
     text-decoration: underline rgb(20, 20, 220);
-    max-width: 1150px;
 }
 
-footer ul li {
-    list-style: none;
-    padding: 1rem 3rem;
-    width: 1150px;
-
+.footer {
+    margin: 0 auto;
 }
+
 
 main {
     display: flex;
@@ -73,6 +63,7 @@ section {
 
 aside {
     background-color: rgb(100, 100, 100);
+    color: rgb(200, 200, 200);
     flex-direction: column;
     padding: .5rem;
     width: 30%;
@@ -86,14 +77,39 @@ aside {
     display: flex;
     font-size: 2rem;
     font-weight: 600;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem;
 }
 
 
 
 .modal {
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(120, 120, 120);
     height: 100vh;
     width: 100vw;
 }
+
+.modal__box {
+    border: solid 5px rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 2rem;
+}
+
+.modal__header {
+    display: flex;
+    margin: 0 auto;
+}
+
+.modal__content {
+    display: flex;
+    margin: 0 auto;
+}
+
+.modal__footer {
+    display: flex;
+    margin: 0 2rem 0 auto;
+}
+
